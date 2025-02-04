@@ -26,6 +26,15 @@
       <p>H-STAR revolutionizes tabular reasoning by combining textual and symbolic approaches for precise and flexible analysis. It first extracts relevant table sections using a ‘multi-view’ method, then adapts reasoning strategies based on question type—using semantic reasoning for lookups and complex queries while integrating symbolic reasoning for calculations and logic. Extensive evaluations show H-STAR surpasses state-of-the-art methods in tabular QA and fact verification.</p>
 
       <h2>
+        <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Need for a Hybrid Approach</h2>
+        <p> 
+          Existing approaches that rely solely on either semantic/symbolic reasoning often face challenges due to the intricate interplay of numerical, temporal, and textual data, combined with complex table structures.
+          While textual reasoning excels in natural language understanding, it frequently misinterprets table structures and struggles with quantitative reasoning.
+          Conversely, SQL-based approaches are proficient in quantitative problem-solving but falter when handling noisy or unstructured inputs.
+        </p>        
+        <img src="figures/reasoning.jpg" alt="Reason for H-STAR">
+
+      <h2>
         <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h2>  
         <img src="figures/main_figure.jpg" alt="Overview Of H-STAR">
       <p> 
@@ -50,12 +59,27 @@
       </p>
       <div class="row">
         <div class="column">
-          <img src="figures/main_results.png" alt="Results 1" style="width:100%">
+          <img src="figures/main_results.png" alt="Results 1" style="width:50%">
         </div>
         <div class="column">
-          <img src="figures/main_results_2.png" alt="Results 2" style="width:100%">
+          <img src="figures/main_results_2.png" alt="Results 2" style="width:50%">
         </div>
       </div>
+
+      <h2>
+        <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>More Results</h2>
+        <p> 
+          H-STAR framework reduces the number of table cells efficiently and performs better on longer tables.
+        </p>
+        <div class="row">
+          <div class="column">
+            <img src="figures/table_reduction.jpg" alt="Efficiency" style="width:50%">
+          </div>
+          <div class="column">
+            <img src="figures/long_tables.png" alt="Lonf Tables" style="width:50%">
+          </div>
+        </div>
+  
 
       <!-- <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/jasonlong/cayman-theme">Cayman</a> is maintained by <a href="https://github.com/jasonlong">jasonlong</a>.</span>
