@@ -24,7 +24,7 @@
       <h2>
       <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h2>
       <p style="text-align: justify;">
-        H-STAR revolutionizes tabular reasoning by combining textual and symbolic approaches for precise and flexible analysis. It first extracts relevant table sections using a ‘multi-view’ method, then adapts reasoning strategies based on question type—using semantic reasoning for lookups and complex queries while integrating symbolic reasoning for calculations and logic. Extensive evaluations show H-STAR surpasses state-of-the-art methods in tabular QA and fact verification.
+        H-STAR revolutionizes tabular reasoning by combining textual and symbolic approaches for <strong>precise</strong> and <strong>flexible</strong> analysis. It first extracts relevant table sections using a <strong>‘multi-view’ column extraction</strong> followed by row extraction, then adapts reasoning strategies based on question type—using <strong>semantic reasoning</strong> for lookups and complex queries while integrating <strong>symbolic reasoning</strong> for calculations and logic. Extensive evaluations show H-STAR <strong>surpasses state-of-the-art methods</strong> in tabular QA and fact verification.
       </p>
 
       <h2>
@@ -32,30 +32,19 @@
         <img src="figures/reasoning.jpg" alt="Reason for H-STAR">
         <p style="text-align: justify;"> 
           Existing approaches that rely solely on either semantic/symbolic reasoning often face challenges due to the intricate interplay of numerical, temporal, and textual data, combined with complex table structures.
-          While textual reasoning excels in natural language understanding, it frequently misinterprets table structures and struggles with quantitative reasoning.
-          Conversely, SQL-based approaches are proficient in quantitative problem-solving but falter when handling noisy or unstructured inputs.
+          While <strong>textual reasoning excels in natural language understanding</strong>, it frequently misinterprets table structures and struggles with quantitative reasoning.
+          Conversely, <strong>SQL-based approaches are proficient in quantitative problem-solving</strong> but falter when handling noisy or unstructured inputs.
         </p>        
         
       <h2>
         <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>H-STAR Overview</h2>  
         <img src="figures/main_figure.jpg" alt="Overview Of H-STAR">
         <p style="text-align: justify;">
-        H-STAR enhances tabular reasoning through a two-stage process: <strong>table extraction</strong> and <strong>adaptive reasoning</strong>. 
-        It first employs a multi-view approach to extract relevant table sections, identifying columns from both
-        the original and transposed table. The original table is then filtered to only contain the data from the selected columns
-        before passing on to the row selection. This method ensures precise context retrieval while minimizing hallucinations. 
-        In the second stage, H-STAR dynamically adapts its reasoning based on the question type. It relies on semantic reasoning 
-        for lookups, common-sense, and lexical queries, while integrating symbolic (SQL-based) reasoning for mathematical and 
-        logical tasks. By combining these strengths, H-STAR surpasses traditional LLM-based text-only and SQL-only methods, 
-        achieving more accurate and flexible table-based reasoning.
+        H-STAR enhances tabular reasoning through a two-stage process: <strong>table extraction</strong> and <strong>adaptive reasoning</strong>. It first employs a multi-view approach to extract relevant table sections, identifying columns from both the original and transposed table. The original table is then filtered to only contain the data from the selected columns before passing on to the row selection. This method ensures precise <strong>table extraction minimizing hallucinations</strong>. In the second stage, H-STAR <strong>dynamically adapts its reasoning based on the question type</strong>. It relies on semantic reasoning for lookups, common-sense, and lexical queries, while integrating symbolic (SQL-based) reasoning for mathematical and logical tasks. By combining these strengths, H-STAR surpasses traditional LLM-based text-only and SQL-only methods, achieving more accurate and flexible table-based reasoning.
       </p>
-        <!-- <blockquote>S
-      <p>This is a blockquote following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-      </blockquote> -->
 
       <h2>
         <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results</h2>
-      <!-- <img src="images\h_star_main.pdf" alt="Overview Of H-STAR" style="margin-left: -90px;"> -->
       
       <p style="text-align: justify;">
         H-STAR framework outperforms previous state-of-the-art methods on both WikiTQ and TabFact across five Large Language Models!
@@ -66,32 +55,17 @@
       </div>
 
       <h2>
-        <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>More Results</h2>
+        <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>H-STAR's Efficiency</h2>
         <p> 
           H-STAR framework reduces the number of table cells efficiently compared to other methods that use table extraction. Furthermore, H-STAR outperforms all baselines on longer tables containing more than 4000 tokens.
         </p>
         <div style="display: flex; justify-content: center; gap: 20px;">
-          <img src="figures/table_reduction.png" alt="Extraction Efficiency" style="width: 45%;">
+          <img src="figures/table_reduction.jpg" alt="Extraction Efficiency" style="width: 45%;">
           <img src="figures/long_tables.png" alt="Long Tables" style="width: 45%;">
         </div>
-        <!-- <div class="row">
-          <div class="column">
-            <img src="figures/table_reduction.jpg" alt="Efficiency" style="width:50%">
-          </div>
-          <div class="column">
-            <img src="figures/long_tables.png" alt="Lonf Tables" style="width:50%">
-          </div>
-        </div> -->
-  
-
-      <!-- <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/jasonlong/cayman-theme">Cayman</a> is maintained by <a href="https://github.com/jasonlong">jasonlong</a>.</span>
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer> -->
 
       <h2>
         <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Acknowledgement</h2>
-      <!-- <img src="images\h_star_main.pdf" alt="Overview Of H-STAR" style="margin-left: -90px;"> -->
       <p> 
         This implementation is based on <a href="https://github.com/xlang-ai/Binder">Binding Language Models in Symbolic Languages</a>. The work has also benefitted from <a href="https://github.com/mahadi-nahid/TabSQLify">TabSQLify: Enhancing Reasoning Capabilities of LLMs Through Table Decomposition</a>. Thanks to the author for releasing the code.
       </p>
