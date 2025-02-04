@@ -23,7 +23,9 @@
 
       <h2>
       <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h2>
-      <p>H-STAR revolutionizes tabular reasoning by combining textual and symbolic approaches for precise and flexible analysis. It first extracts relevant table sections using a ‘multi-view’ method, then adapts reasoning strategies based on question type—using semantic reasoning for lookups and complex queries while integrating symbolic reasoning for calculations and logic. Extensive evaluations show H-STAR surpasses state-of-the-art methods in tabular QA and fact verification.</p>
+      <p style="text-align: justify;">
+        H-STAR revolutionizes tabular reasoning by combining textual and symbolic approaches for precise and flexible analysis. It first extracts relevant table sections using a ‘multi-view’ method, then adapts reasoning strategies based on question type—using semantic reasoning for lookups and complex queries while integrating symbolic reasoning for calculations and logic. Extensive evaluations show H-STAR surpasses state-of-the-art methods in tabular QA and fact verification.
+      </p>
 
       <h2>
         <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Need for a Hybrid Approach</h2>
@@ -35,7 +37,7 @@
         </p>        
         
       <h2>
-        <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h2>  
+        <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>H-STAR Overview</h2>  
         <img src="figures/main_figure.jpg" alt="Overview Of H-STAR">
         <p style="text-align: justify;">
         H-STAR enhances tabular reasoning through a two-stage process: <strong>table extraction</strong> and <strong>adaptive reasoning</strong>. 
@@ -62,28 +64,24 @@
         <img src="figures/main_results.png" alt="Results 1" style="width: 45%;">
         <img src="figures/main_results_2.png" alt="Results 2" style="width: 45%;">
       </div>
-      <!-- <div class="row">
-        <div class="column">
-          <img src="figures/main_results.png" alt="Results 1" style="width:50%">
-        </div>
-        <div class="column">
-          <img src="figures/main_results_2.png" alt="Results 2" style="width:50%">
-        </div>
-      </div> -->
 
       <h2>
         <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>More Results</h2>
         <p> 
-          H-STAR framework reduces the number of table cells efficiently and performs better on longer tables.
+          H-STAR framework reduces the number of table cells efficiently compared to other methods that use table extraction. Furthermore, H-STAR outperforms all baselines on longer tables containing more than 4000 tokens.
         </p>
-        <div class="row">
+        <div style="display: flex; justify-content: center; gap: 20px;">
+          <img src="figures/table_reduction.png" alt="Extraction Efficiency" style="width: 45%;">
+          <img src="figures/long_tables.png" alt="Long Tables" style="width: 45%;">
+        </div>
+        <!-- <div class="row">
           <div class="column">
             <img src="figures/table_reduction.jpg" alt="Efficiency" style="width:50%">
           </div>
           <div class="column">
             <img src="figures/long_tables.png" alt="Lonf Tables" style="width:50%">
           </div>
-        </div>
+        </div> -->
   
 
       <!-- <footer class="site-footer">
