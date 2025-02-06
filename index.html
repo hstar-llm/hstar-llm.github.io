@@ -109,7 +109,7 @@
                     <td>61.48</td>
                 </tr>
                 <tr>
-                    <td>Chain-of-Table*</td>
+                    <td>Chain-of-Table</td>
                     <td>80.20</td>
                     <td>59.94</td>
                     <td style="background-color: #f2f2f2; font-weight: bold;">86.61</td>
@@ -134,6 +134,7 @@
     
         <!-- Second Table -->
         <table style="border-collapse: collapse; width: 100%;">
+          <!-- <caption style="font-weight: bold; margin-bottom: 10px; text-align: center;">Performance on Across Different</caption> -->
             <thead style="border-top: 4px double black; border-bottom: 4px double black;">
                 <tr>
                     <th></th>
@@ -373,10 +374,14 @@
 
         <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
           <!-- Image on the left -->
-          <img src="figures/table_reduction.jpg" alt="Extraction Efficiency" style="width: 45%;">
+          <figure style="width: 45%; text-align: center;">
+            <img src="figures/table_reduction.jpg" alt="Extraction Efficiency" style="width: 100%;">
+            <figcaption>Extraction Efficiency Comparison</figcaption>
+          </figure>
       
           <!-- Table on the right -->
           <table style="border-collapse: collapse; width: 45%; font-size: 14px;">
+            <caption style="font-weight: bold; margin-bottom: 10px; text-align: center;">Performance on Longer Tables</caption>
             <thead style="border-top: 4px double black; border-bottom: 4px double black;">
                   <tr>
                       <th style="text-align: left; padding: 5px;">Method</th>
@@ -426,6 +431,22 @@
           <img src="figures/table_reduction.jpg" alt="Extraction Efficiency" style="width: 45%;">
           <img src="figures/long_tables.png" alt="Long Tables" style="width: 45%;">
         </div> -->
+        <h2>
+          <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Error Analysis</h2>
+        <p> 
+        H-STAR excels in table extraction and reasoning, showing fewer errors in column/row extraction and better overall performance compared to TabSQLify and BINDER, with higher reasoning errors reflecting its strong table retrieval.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+          <figure style="width: 45%; text-align: center;">
+            <img src="figures/error_comparison.jpg" alt="Error Efficiency" style="width: 100%;">
+            <figcaption>Error distribution on 100 error samples across datasets for H-STAR</figcaption>
+          </figure>
+          <figure style="width: 45%; text-align: center;">
+            <img src="figures/performance_metrics.jpg" alt="Error Comparison" style="width: 100%;">
+            <figcaption>Analysis of error types in 100 samples from WikiTQ where TabSQLify fails. </figcaption>
+          </figure>
+        </div>
+        
 
       <h2>
         <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Acknowledgement</h2>
