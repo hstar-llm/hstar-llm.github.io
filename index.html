@@ -50,10 +50,10 @@
         H-STAR framework outperforms previous state-of-the-art methods on both WikiTQ and TabFact across five Large Language Models!
       </p>
 
-      <div class="table-container" style="display: flex; gap: 20px; font-size: 9px;">
+      <div class="table-container" style="display: flex; gap: 20px; font-size: 9px; margin: 0 10px;">
         <!-- First Table -->
         <table style="border-collapse: collapse; width: 100%;">
-            <thead>
+            <thead style="border-bottom: 4px double black;">
                 <tr>
                     <th rowspan="2"></th>
                     <th colspan="2">GPT-3.5-Turbo</th>
@@ -122,7 +122,7 @@
                     <td>79.78</td>
                     <td>55.78</td>
                 </tr>
-                <tr style="background-color: #f2f2f2; font-weight: bold;">
+                <tr style="background-color: #f2f2f2; font-weight: bold; border-top: 4px double black; border-bottom: 4px double black;">
                     <td>H-STAR</td>
                     <td>83.74</td>
                     <td>68.85</td>
@@ -134,74 +134,79 @@
     
         <!-- Second Table -->
         <table style="border-collapse: collapse; width: 100%;">
-            <tr>
-                <th></th>
-                <th colspan="2">GPT-4o-mini</th>
-                <th colspan="2">Gemini-1.5</th>
-                <th colspan="2">Llama-3</th>
-            </tr>
-            <tr>
-                <th></th>
-                <th>TF</th>
-                <th>WTQ</th>
-                <th>TF</th>
-                <th>WTQ</th>
-                <th>TF</th>
-                <th>WTQ</th>
-            </tr>
-            <tr>
-                <th colspan="7" style="background-color: #f2f2f2; font-weight: bold; text-align: center;">Generic Reasoning</th>
-            </tr>
-            <tr>
-                <td>End-to-End QA</td>
-                <td>73.22</td>
-                <td>59.43</td>
-                <td>81.12</td>
-                <td>58.47</td>
-                <td>78.41</td>
-                <td>57.89</td>
-            </tr>
-            <tr>
-                <td>CoT</td>
-                <td>75.99</td>
-                <td>64.31</td>
-                <td>79.99</td>
-                <td>64.11</td>
-                <td>75.34</td>
-                <td>65.49</td>
-            </tr>
-            <tr>
-                <th colspan="7" style="background-color: #f2f2f2; font-weight: bold; text-align: center;">Table Manipulation</th>
-            </tr>
-            <tr>
-                <td>TabSQLify</td>
-                <td>78.30</td>
-                <td>68.74</td>
-                <td>79.50</td>
-                <td>63.92</td>
-                <td>70.00</td>
-                <td>66.85</td>
-            </tr>
-            <tr>
-                <td>Chain-of-Table</td>
-                <td>85.09</td>
-                <td>68.53</td>
-                <td>86.95</td>
-                <td>65.85</td>
-                <td>80.86</td>
-                <td>70.76</td>
-            </tr>
-            <tr style="background-color: #f2f2f2; font-weight: bold;">
-                <td>H-STAR</td>
-                <td>89.42</td>
-                <td>74.93</td>
-                <td>89.08</td>
-                <td>73.14</td>
-                <td>89.23</td>
-                <td>75.76</td>
-            </tr>
+            <thead style="border-bottom: 4px double black;">
+                <tr>
+                    <th></th>
+                    <th colspan="2">GPT-4o-mini</th>
+                    <th colspan="2">Gemini-1.5</th>
+                    <th colspan="2">Llama-3</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>TF</th>
+                    <th>WTQ</th>
+                    <th>TF</th>
+                    <th>WTQ</th>
+                    <th>TF</th>
+                    <th>WTQ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="7" style="background-color: #f2f2f2; font-weight: bold; text-align: center;">Generic Reasoning</th>
+                </tr>
+                <tr>
+                    <td>End-to-End QA</td>
+                    <td>73.22</td>
+                    <td>59.43</td>
+                    <td>81.12</td>
+                    <td>58.47</td>
+                    <td>78.41</td>
+                    <td>57.89</td>
+                </tr>
+                <tr>
+                    <td>CoT</td>
+                    <td>75.99</td>
+                    <td>64.31</td>
+                    <td>79.99</td>
+                    <td>64.11</td>
+                    <td>75.34</td>
+                    <td>65.49</td>
+                </tr>
+                <tr>
+                    <th colspan="7" style="background-color: #f2f2f2; font-weight: bold; text-align: center;">Table Manipulation</th>
+                </tr>
+                <tr>
+                    <td>TabSQLify</td>
+                    <td>78.30</td>
+                    <td>68.74</td>
+                    <td>79.50</td>
+                    <td>63.92</td>
+                    <td>70.00</td>
+                    <td>66.85</td>
+                </tr>
+                <tr>
+                    <td>Chain-of-Table</td>
+                    <td>85.09</td>
+                    <td>68.53</td>
+                    <td>86.95</td>
+                    <td>65.85</td>
+                    <td>80.86</td>
+                    <td>70.76</td>
+                </tr>
+                <tr style="background-color: #f2f2f2; font-weight: bold; border-top: 4px double black; border-bottom: 4px double black;">
+                    <td>H-STAR</td>
+                    <td>89.42</td>
+                    <td>74.93</td>
+                    <td>89.08</td>
+                    <td>73.14</td>
+                    <td>89.23</td>
+                    <td>75.76</td>
+                </tr>
+            </tbody>
         </table>
     </div>
+    
 			<!-- <div>
 				<table>
 					<thead>
@@ -404,7 +409,7 @@
                       <td style="padding: 5px;">57.91</td>
                       <td style="padding: 5px;">52.34</td>
                   </tr>
-                  <tr style="font-weight: bold;">
+                  <tr style="background-color: #f2f2f2; font-weight: bold;">
                       <td style="padding: 5px;">H-STAR</td>
                       <td style="padding: 5px;">71.64</td>
                       <td style="padding: 5px;">65.20</td>
