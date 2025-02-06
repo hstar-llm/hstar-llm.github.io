@@ -354,20 +354,70 @@
     </table>
     <!-- <p>Table 3: Comparison of various models across datasets. TF: TabFact; WTQ: WikiTQ</p> -->
     
-      <div style="display: flex; justify-content: center; gap: 20px;">
+      <!-- <div style="display: flex; justify-content: center; gap: 20px;">
         <img src="figures/main_results.png" alt="Results 1" style="width: 45%;">
         <img src="figures/main_results_2.png" alt="Results 2" style="width: 45%;">
-      </div> -->
+      </div>  -->
 
       <h2>
         <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>H-STAR's Efficiency</h2>
         <p> 
           H-STAR framework reduces the number of table cells efficiently compared to other methods that use table extraction. Furthermore, H-STAR outperforms all baselines on longer tables containing more than 4000 tokens.
         </p>
-        <div style="display: flex; justify-content: center; gap: 20px;">
+
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+          <!-- Image on the left -->
+          <img src="figures/table_reduction.jpg" alt="Extraction Efficiency" style="width: 45%;">
+      
+          <!-- Table on the right -->
+          <table style="border-collapse: collapse; width: 45%; font-size: 14px;">
+              <thead>
+                  <tr>
+                      <th style="text-align: left; padding: 5px;">Method</th>
+                      <th style="padding: 5px;">Small</th>
+                      <th style="padding: 5px;">Medium</th>
+                      <th style="padding: 5px;">Large</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td style="padding: 5px;">BINDER</td>
+                      <td style="padding: 5px;">56.54</td>
+                      <td style="padding: 5px;">25.13</td>
+                      <td style="padding: 5px;">6.41</td>
+                  </tr>
+                  <tr>
+                      <td style="padding: 5px;">DATER</td>
+                      <td style="padding: 5px;">62.50</td>
+                      <td style="padding: 5px;">42.34</td>
+                      <td style="padding: 5px;">34.62</td>
+                  </tr>
+                  <tr>
+                      <td style="padding: 5px;">Chain-of-Table</td>
+                      <td style="padding: 5px;">68.13</td>
+                      <td style="padding: 5px;">52.25</td>
+                      <td style="padding: 5px;">44.87</td>
+                  </tr>
+                  <tr>
+                      <td style="padding: 5px;">TabSQLify</td>
+                      <td style="padding: 5px;">68.15</td>
+                      <td style="padding: 5px;">57.91</td>
+                      <td style="padding: 5px;">52.34</td>
+                  </tr>
+                  <tr style="font-weight: bold;">
+                      <td style="padding: 5px;">H-STAR</td>
+                      <td style="padding: 5px;">71.64</td>
+                      <td style="padding: 5px;">65.20</td>
+                      <td style="padding: 5px;">64.84</td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+      
+        <!-- <div style="display: flex; justify-content: center; gap: 20px;">
           <img src="figures/table_reduction.jpg" alt="Extraction Efficiency" style="width: 45%;">
           <img src="figures/long_tables.png" alt="Long Tables" style="width: 45%;">
-        </div>
+        </div> -->
 
       <h2>
         <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Acknowledgement</h2>
