@@ -64,7 +64,7 @@
           display: flex;
           gap: 10px;
           font-size: 14px; /* Fixed font size */
-          margin: 0 -10vw 0 -10vw; /* Extends beyond margins */
+          margin: 0 -7vw 0 -7vw; /* Extends beyond margins */
           /* width: 110vw; Expands tables beyond viewport */
           justify-content: center;
         }
@@ -272,8 +272,14 @@
 
         <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
           <!-- Image on the left -->
+          <style>
+            .bold-caption {
+              font-weight: bold;
+              font-size: 14px;
+            }
+          </style>
           <figure style="width: 45%; text-align: center;">
-            <figcaption>Extraction Efficiency Comparison</figcaption>
+            <figcaption class="bold-caption">Extraction Efficiency Comparison</figcaption>
             <img src="figures/table_reduction.jpg" alt="Extraction Efficiency" style="width: 100%;">
           </figure>
       
@@ -330,13 +336,19 @@
         <p> 
         H-STAR excels in table extraction and reasoning, showing fewer errors in column/row extraction and better overall performance compared to TabSQLify and BINDER, with higher reasoning errors reflecting its strong table retrieval.
         </p>
+        <style>
+          .bold-caption {
+            font-weight: bold;
+            font-size: 14px;
+          }
+        </style>
         <div style="display: flex; justify-content: center; gap: 20px;">
           <figure style="width: 45%; text-align: center;">
-            <figcaption>Error distribution on 100 error samples across datasets for H-STAR</figcaption>
+            <figcaption class="bold-caption">Error distribution on 100 error samples across datasets for H-STAR</figcaption>
             <img src="figures/error_comparison.jpg" alt="Error Efficiency" style="width: 100%;">
           </figure>
           <figure style="width: 45%; text-align: center;">
-            <figcaption>Analysis of error types in 100 samples from WikiTQ where TabSQLify fails.</figcaption>
+            <figcaption class="bold-caption">Analysis of error types in 100 samples from WikiTQ where TabSQLify fails.</figcaption>
             <img src="figures/performance_metrics.jpg" alt="Error Comparison" style="width: 100%;">
           </figure>
         </div>
