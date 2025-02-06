@@ -59,20 +59,20 @@
       </p>
 
       <style>
+        /* Ensure the table container spans the full width */
         .table-container {
           display: flex;
           gap: 20px;
           font-size: 14px; /* Fixed font size */
-          margin: 0;
-          overflow-x: auto; /* Prevents horizontal scrolling */
-          max-width: 100%;
+          margin: 0 -5vw; /* Extends beyond margins */
+          width: 110vw; /* Expands tables beyond viewport */
           justify-content: center;
         }
       
+        /* Table styles */
         table {
           border-collapse: collapse;
-          width: auto; /* Allows table to fit content */
-          max-width: 100%;
+          width: 100%; /* Ensures full width usage */
         }
       
         th, td {
@@ -261,7 +261,7 @@
           </tbody>
           <caption>Performance Across Different LLM Backbones. <strong>TF:</strong> TabFact; <strong>WTQ:</strong> WikiTQ</caption>
         </table>
-      </div>
+      </div>      
       
 
       <h2>
